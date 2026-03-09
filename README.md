@@ -1,25 +1,41 @@
 # Student Performance Prediction
 
+A Machine Learning project that predicts whether a student will pass or fail based on academic performance and demographic features.
+
+---
+
 ## Project Overview
-This project predicts whether a student will pass or fail based on academic performance and demographic features using Machine Learning models.
+
+The goal of this project is to analyze student performance data and build machine learning models that can predict student outcomes.
+
+By using classification algorithms, we can identify patterns in academic performance and understand factors that influence student success.
+
+---
 
 ## Dataset
-Dataset used: Student Performance Dataset
+
+Dataset used: **Student Performance Dataset**
 
 Features included:
-- Gender
-- Parental level of education
-- Lunch type
-- Test preparation course
-- Math score
-- Reading score
-- Writing score
 
-## Project Workflow
+* Gender
+* Race/Ethnicity
+* Parental Level of Education
+* Lunch Type
+* Test Preparation Course
+* Math Score
+* Reading Score
+* Writing Score
+
+---
+
+## Machine Learning Workflow
+
+The project follows a standard machine learning pipeline:
 
 1. Import Libraries
 2. Load Dataset
-3. Data Exploration
+3. Dataset Exploration
 4. Feature Engineering
 5. Label Encoding
 6. Exploratory Data Analysis
@@ -28,39 +44,116 @@ Features included:
 9. Random Forest Model
 10. Model Evaluation
 
-## Models Used
+---
 
-- Logistic Regression
-- Random Forest Classifier
+## Exploratory Data Analysis
 
-## Evaluation Metrics
+### Distribution of Average Scores
 
-- Accuracy Score
-- Confusion Matrix
+![Score Distribution](images/score_distribution.png)
+
+### Feature Correlation Heatmap
+
+![Correlation Heatmap](images/correlation_heatmap.png)
+
+---
+
+## Model Training
+
+Two machine learning models were trained.
+
+### Logistic Regression
+
+Used as a baseline classification model.
+
+### Random Forest Classifier
+
+An ensemble learning method that generally performs better for classification problems.
+
+---
+
+## Model Evaluation
+
+### Confusion Matrix
+
+![Confusion Matrix](images/confusion_matrix.png)
+
+Evaluation metrics used:
+
+* Accuracy Score
+* Confusion Matrix
+
+---
 
 ## Results
 
 Random Forest performed better than Logistic Regression for predicting student performance.
 
+Important features affecting results:
+
+* Math Score
+* Reading Score
+* Writing Score
+
+---
+
 ## Technologies Used
 
-- Python
-- Pandas
-- NumPy
-- Scikit-Learn
-- Matplotlib
-- Seaborn
-- Jupyter Notebook
+* Python
+* Pandas
+* NumPy
+* Scikit-Learn
+* Matplotlib
+* Seaborn
+* Jupyter Notebook
 
+---
 
+## Project Structure
 
-## Model Evaluation
+```
+Student-Performance-Prediction
+│
+├── data
+│   └── StudentsPerformance.csv
+│
+├── notebook
+│   └── student_performance.ipynb
+│
+├── images
+│   ├── confusion_matrix.png
+│   ├── correlation_heatmap.png
+│   └── score_distribution.png
+│
+└── README.md
+```
 
-### Confusion Matrix
-![Confusion Matrix](images/confusion_matrix.png)
+---
 
-### Score Distribution
-![Score Distribution](images/score_distribution.png)
+## How to Run the Project
 
-### Feature Correlation Heatmap
-![Correlation Heatmap](images/correlation_heatmap.png)
+Clone the repository
+
+```
+git clone https://github.com/TheAkshatGupta/Student-Performance-Prediction.git
+```
+
+Install required libraries
+
+```
+pip install pandas numpy matplotlib seaborn scikit-learn
+```
+
+Open the notebook
+
+```
+jupyter notebook notebook/student_performance.ipynb
+```
+
+---
+
+## Author
+
+**Akshat Gupta**
+
+Data Science / Machine Learning Enthusiast
