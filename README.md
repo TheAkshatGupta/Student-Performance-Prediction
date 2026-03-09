@@ -52,4 +52,15 @@ Random Forest performed better than Logistic Regression for predicting student p
 - Seaborn
 - Jupyter Notebook
 
-## Project Structure
+
+
+## Model Evaluation
+
+### Confusion Matrix
+![Confusion Matrix](images/confusion_matrix.png)
+
+### Score Distribution
+![Score Distribution](images/score_distribution.png)
+
+### Feature Correlation Heatmap
+![Correlation Heatmap](images/correlation_heatmap.png)
