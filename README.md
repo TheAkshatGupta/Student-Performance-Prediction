@@ -1,3 +1,6 @@
+## Project Overview Diagram
+
+![Project Overview](images/project_overview_whiteboard.png)
 # Student Performance Prediction
 
 A Machine Learning project that predicts whether a student will pass or fail based on academic performance and demographic features.
